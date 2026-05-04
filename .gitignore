@@ -1,0 +1,21 @@
+# Python virtual environment
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Captured images and prepared datasets
+data/
+labelstudio_data/
+
+# Trained model weights and runs
+runs/
+*.pt
+
+# Generated outputs
+augmentations.pdf
+
+# Editor / OS noise
+.vscode/
+.idea/
+.DS_Store
