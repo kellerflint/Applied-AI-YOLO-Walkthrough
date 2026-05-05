@@ -17,7 +17,7 @@ By the end of this walkthrough you will have:
 ## Prerequisites
 
 - A laptop with a webcam (Mac, Windows, or Linux all work).
-- Python 3.9 or newer installed and on your PATH.
+- Python 3.9 or newer installed and on your PATH. Install python at https://www.python.org/downloads/
 - Git (just for cloning this repo).
 - Docker Desktop installed (used only for Label Studio, optional if you choose the pip install path for Label Studio instead).
 - About 2 GB of free disk space (most of it is the YOLO weights and PyTorch).
