@@ -118,8 +118,6 @@ Useful flags:
 - `--prefix` (default `clip`)
 - `--fps` to override the camera's reported FPS if it looks wrong
 
-Note that clips are written with the `mp4v` codec, which plays reliably in QuickTime / VLC. If you need browser-playable output, re-encode with ffmpeg or pass them through a pipeline that re-writes with H.264.
-
 ---
 
 ## Step 2: Label the images in Label Studio
