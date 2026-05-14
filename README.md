@@ -338,7 +338,7 @@ A few things to try, in order:
 ## Project structure
 
 ```
-testing/yolo-walkthrough/
+yolo-walkthrough/
 ├── README.md                  # this file
 ├── requirements.txt           # Python dependencies
 ├── .gitignore                 # excludes data/, runs/, venv/, etc.
