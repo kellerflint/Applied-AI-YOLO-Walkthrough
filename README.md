@@ -101,6 +101,25 @@ Press SPACE to save the current frame. Press Q (or Escape) to quit. Frames land 
 
 The more your training set looks like the conditions you will use the model in, the better it will perform. If you only ever capture the object in the center of a clean white background, the model will struggle when the background is messy or the object is at the edge.
 
+### Recording video clips (Optional)
+
+If you also need an actual video file (for example to feed into a downstream app, not just for labeling individual frames), use:
+
+```bash
+python scripts/record.py
+```
+
+Press **R** to start recording, **R** again to stop and save. Press **Q** to quit (any active recording is saved on the way out). You can record multiple clips in one session. Each clip is saved to `data/videos/clip_<timestamp>.mp4`.
+
+Useful flags:
+
+- `--output-dir` (default `data/videos`)
+- `--camera` (default `0`)
+- `--prefix` (default `clip`)
+- `--fps` to override the camera's reported FPS if it looks wrong
+
+Note that clips are written with the `mp4v` codec, which plays reliably in QuickTime / VLC. If you need browser-playable output, re-encode with ffmpeg or pass them through a pipeline that re-writes with H.264.
+
 ---
 
 ## Step 2: Label the images in Label Studio
