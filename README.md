@@ -185,7 +185,7 @@ If you re-label more images later and re-export, re-run this script. It wipes an
 Before you train, run the augmentation visualizer. This produces a single PDF showing what each YOLO augmentation does to one of your captured images:
 
 ```bash
-python scripts/visualize_augmentations.py
+python scripts/visualize_augmentations.py --image-dir /path/to/raw-images-folder
 ```
 
 You get `augmentations.pdf` in the project root. Open it. You will see a grid with one panel per augmentation:
