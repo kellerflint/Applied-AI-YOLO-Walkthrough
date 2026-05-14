@@ -327,7 +327,7 @@ The mosaic augmentation needs 4 images. Capture more frames with `capture.py` fi
 
 ### Trained model misses obvious objects in live inference
 A few things to try, in order:
-1. Lower the confidence threshold: `--conf 0.05`.
+1. Adjust the confidence threshold: `--conf 0.05`.
 2. Check `runs/detect/run1/val_batch0_pred.jpg` — if the model is bad on validation images too, the issue is training, not inference.
 3. Capture more diverse training images. If you only labeled the object on a white desk, the model will not generalize to other backgrounds.
 4. Train for more epochs: `--epochs 100`.
